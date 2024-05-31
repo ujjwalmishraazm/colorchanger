@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: aliceblue;
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+        <div class="day">friday</div>
+    </div>
+</body>
+<script>
+   const ujj= document.querySelector(".parent");
+//    console.log( ujj . children)
+   console.log(ujj .children[1].innerHTML = 'ram');
+// for (let I = 0; I < ujj.children.length; I++) {
+//     const element =ujj.children [I] .innerHTML;
+//     console.log(element);
+    
+// }
+ujj.children[2].style.color = 'orange'
+console.log(ujj.firstElementChild)
+console.log(ujj.lastElementChild)
+console.log(ujj.childNodes);
+
+</script>
+</html>

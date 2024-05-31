@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black; color: white;
+    }
+</style>
+<body>
+<li class="language"> javascript</li>
+</body>
+<script>
+ function lang(langName) {
+     const ujj =  document.createElement("li")
+     ujj.innerHTML = `${ langName}`
+document.querySelector ('.language').
+     appendChild(ujj)
+  }
+ 
+lang( 'python')
+// another technique to add element
+function another(langName) { 
+    const ujj = document .createElement('li')
+ujj.appendChild (  document.createTextNode(langName ) )
+document.querySelector(".language").appendChild(ujj)
+}
+ another("sql" )
+//   to edit any element 
+  const ujji = document.querySelector("li:nth-child(2)")
+  const ujj = document.createElement('li')
+ ujj.textContent = 'mojo'
+ ujji.replaceWith(ujj)
+</script>
+</html>
